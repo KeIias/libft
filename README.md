@@ -1,4 +1,4 @@
 # libft
 Contains a bunch of libc functions as well as other useful tools that I made
 
-This work started from the libft project from school 42's cursus
+This work started from a school project and I keep using/updating it regularly
