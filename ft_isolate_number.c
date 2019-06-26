@@ -6,18 +6,18 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/25 11:57:34 by algautie          #+#    #+#             */
-/*   Updated: 2019/06/25 14:22:03 by algautie         ###   ########.fr       */
+/*   Updated: 2019/06/26 10:21:59 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isolate_number(char *str, int start)
+long	ft_isolate_number(char *str, int start)
 {
 	int		i;
 	char	*tmp;
 	int		size;
-	int		ret;
+	long	ret;
 	int		j;
 
 	size = 0;
@@ -30,7 +30,7 @@ int		ft_isolate_number(char *str, int start)
 	j = 0;
 	while (ft_isdigit(str[++i]) && ++j)
 		tmp[j - 1] = str[i];
-	ret = ft_atoi(tmp);
+	ret = ft_atolong(tmp);
 	free(tmp);
 	return (ret);
 }
