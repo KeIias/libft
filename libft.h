@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 12:24:48 by algautie          #+#    #+#             */
-/*   Updated: 2019/06/27 15:26:00 by algautie         ###   ########.fr       */
+/*   Updated: 2019/07/08 15:26:55 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,7 @@ int					ft_cmpchars(char c, char *cs);
 long				ft_isolate_number(char *str, int start);
 long				ft_atolong(const char *str);
 int					ft_strcdlen(char *str, char c, int start);
+char				*ft_lltoa_base(long long value, int base);
+int					ft_biggest(int a, int b);
 
 #endif
