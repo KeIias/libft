@@ -96,5 +96,6 @@ long				ft_atolong(const char *str);
 int					ft_strcdlen(char *str, char c, int start);
 char				*ft_lltoa_base(long long value, int base);
 int					ft_biggest(int a, int b);
+int					ft_issorted(int *tab, int size);
 
 #endif
