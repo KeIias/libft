@@ -103,7 +103,7 @@ int					ft_strcdlen(char *str, char c, int start);
 char				*ft_lltoa_base(long long value, int base);
 int					ft_biggest(int a, int b);
 int					ft_issorted(int *tab, int size);
-t_dlist				*ft_create_elem(int value);
-void				ft_list_push_back(t_dlist **beg, int value);
+t_dlist				*ft_lst_create_elem(int value);
+void				ft_lst_push_back(t_dlist **beg, int value);
 
 #endif

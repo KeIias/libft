@@ -1,6 +1,6 @@
 #include "libft.h"
 
-t_dlist		*ft_create_elem(int value)
+t_dlist		*ft_lst_create_elem(int value)
 {
 	t_dlist *new_elem;
 
