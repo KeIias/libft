@@ -26,6 +26,7 @@ typedef struct		s_list
 typedef struct		s_dlist
 {
 	int				value;
+	char			info;
 	struct s_dlist	*next;
 }					t_dlist;
 
@@ -105,5 +106,6 @@ int					ft_biggest(int a, int b);
 int					ft_issorted(int *tab, int size);
 t_dlist				*ft_lst_create_elem(int value);
 void				ft_lst_push_back(t_dlist **beg, int value);
+int					ft_lstlen(t_dlist *beg);
 
 #endif
