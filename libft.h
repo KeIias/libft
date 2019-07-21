@@ -107,5 +107,6 @@ int					ft_issorted(int *tab, int size);
 t_dlist				*ft_lst_create_elem(int value);
 void				ft_lst_push_back(t_dlist **beg, int value);
 int					ft_lstlen(t_dlist *beg);
+void				ft_swap(int *a, int *b);
 
 #endif
