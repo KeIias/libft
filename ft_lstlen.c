@@ -7,7 +7,10 @@ int		ft_lstlen(t_dlist *beg)
 
 	size = 0;
 	tmp = beg;
-	while (++size && tmp->next != NULL)
+	while (tmp != NULL)
+	{
 		tmp = tmp->next;
+		size++;
+	}
 	return (size);
 }
