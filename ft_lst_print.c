@@ -10,7 +10,8 @@ void	ft_lst_print(t_dlist *beg)
 	while (lst != NULL)
 	{
 		ft_putnbr(lst->value);
-		ft_putchar(' ');
+		if (lst->next != NULL)
+			ft_putchar(' ');
 		lst = lst->next;
 	}
 }
