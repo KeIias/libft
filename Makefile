@@ -27,6 +27,7 @@ SRC = ft_putchar.c ft_putstr.c ft_memset.c ft_memcpy.c ft_memccpy.c ft_bzero.c\
 	  ft_sort_integer_table.c ft_cmpchars.c ft_isolate_number.c ft_atolong.c\
 	  ft_strcdlen.c ft_lltoa_base.c ft_biggest.c ft_issorted.c ft_lstlen.c\
 	  ft_lst_create_elem.c ft_lst_push_back.c ft_swap.c ft_lst_push_front.c\
+	  ft_lst_print.c
 
 OBJ = $(SRC:.c=.o)
 

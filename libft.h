@@ -109,5 +109,6 @@ void				ft_lst_push_back(t_dlist **beg, int value);
 int					ft_lstlen(t_dlist *beg);
 void				ft_swap(int *a, int *b);
 void				ft_lst_push_front(t_dlist **beg, int value);
+void				ft_lst_print(t_dlist *beg);
 
 #endif
