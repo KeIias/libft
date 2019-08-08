@@ -14,4 +14,5 @@ void	ft_lst_print(t_dlist *beg)
 			ft_putchar(' ');
 		lst = lst->next;
 	}
+	ft_putchar('\n');
 }
