@@ -6,7 +6,7 @@
 #    By: algautie <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/24 12:23:50 by algautie          #+#    #+#              #
-#    Updated: 2019/07/08 15:27:05 by algautie         ###   ########.fr        #
+#    Updated: 2019/08/21 16:02:48 by algautie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = ft_putchar.c ft_putstr.c ft_memset.c ft_memcpy.c ft_memccpy.c ft_bzero.c\
 	  ft_lstdelone.c ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_strdchr.c\
 	  ft_isspace.c ft_islow.c ft_isup.c ft_lstrev.c ft_itoa_base.c\
 	  ft_sort_integer_table.c ft_cmpchars.c ft_isolate_number.c ft_atolong.c\
-	  ft_strcdlen.c ft_lltoa_base.c ft_biggest.c
+	  ft_strcdlen.c ft_lltoa_base.c ft_ulltoa_base.c ft_biggest.c
 
 OBJ = $(SRC:.c=.o)
 
