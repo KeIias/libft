@@ -23,6 +23,13 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		s_dlist
+{
+	int				value;
+	char			info;
+	struct s_dlist	*next;
+}					t_dlist;
+
 void				ft_putchar(char c);
 void				ft_putstr(char const *str);
 void				*ft_memset(void *b, int c, size_t len);
@@ -97,5 +104,12 @@ int					ft_strcdlen(char *str, char c, int start);
 char				*ft_lltoa_base(long long value, int base);
 char				*ft_ulltoa_base(unsigned long long value, int base);
 int					ft_biggest(int a, int b);
+int					ft_issorted(int *tab, int size);
+t_dlist				*ft_lst_create_elem(int value);
+void				ft_lst_push_back(t_dlist **beg, int value);
+int					ft_lstlen(t_dlist *beg);
+void				ft_swap(int *a, int *b);
+void				ft_lst_push_front(t_dlist **beg, int value);
+void				ft_lst_print(t_dlist *beg);
 
 #endif
