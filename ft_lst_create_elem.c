@@ -21,7 +21,7 @@ t_dlist		*ft_lst_create_elem(int value)
 	else
 	{
 		new_elem->value = value;
-		new_elem->info = 'n';
+		new_elem->info = 'r';
 		new_elem->next = NULL;
 	}
 	return (new_elem);
