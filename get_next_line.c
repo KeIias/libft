@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 13:46:25 by algautie          #+#    #+#             */
-/*   Updated: 2019/09/22 13:33:43 by algautie         ###   ########.fr       */
+/*   Updated: 2019/09/23 16:14:08 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,11 @@ int				get_next_line(int fd, char **line)
 	char		*tmp;
 	int			ret;
 
+	if (line == NULL && txt[fd])
+	{
+		free(txt);
+		return (-1);
+	}
 	if (BUFF_SIZE < 1 || fd > 65535 || !line || fd < 0 ||
 			(!txt[fd] && !(txt[fd] = ft_strnew(1))))
 		return (-1);
@@ -55,9 +60,7 @@ int				get_next_line(int fd, char **line)
 		txt[fd] = ft_strjoin(tmp, buff);
 		free(tmp);
 	}
-	if (ret == -1)
-		return (-1);
-	if (!(*line = get_line(txt, fd, *line)))
+	if (ret == -1 || !(*line = get_line(txt, fd, *line)))
 		return (-1);
 	if (ft_strlen(*line) == 0 && !txt[fd])
 		return (0);
