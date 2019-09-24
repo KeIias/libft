@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 12:41:58 by algautie          #+#    #+#             */
-/*   Updated: 2019/09/24 12:46:23 by algautie         ###   ########.fr       */
+/*   Updated: 2019/09/24 15:02:51 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 void	ft_lst_free(t_dlist *beg)
 {
-	if (beg->next)
-		ft_lst_free(beg->next);
-	free(beg);
+	t_dlist *tmp;
+
+	while (beg)
+	{
+		tmp = beg;
+		beg = beg->next;
+		free(tmp);
+	}
 }
