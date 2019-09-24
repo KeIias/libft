@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 12:24:48 by algautie          #+#    #+#             */
-/*   Updated: 2019/09/22 13:33:06 by algautie         ###   ########.fr       */
+/*   Updated: 2019/09/24 12:47:50 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,7 @@ int					ft_lstlen(t_dlist *beg);
 void				ft_swap(int *a, int *b);
 void				ft_lst_push_front(t_dlist **beg, int value);
 void				ft_lst_print(t_dlist *beg);
+void				ft_lst_free(t_dlist *beg);
 int					get_next_line(int fd, char **line);
 
 #endif
