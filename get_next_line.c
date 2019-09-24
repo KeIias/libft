@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 13:46:25 by algautie          #+#    #+#             */
-/*   Updated: 2019/09/23 16:14:08 by algautie         ###   ########.fr       */
+/*   Updated: 2019/09/24 15:47:48 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static char		*get_line(char **txt, int fd, char *line)
 		if (!(line = ft_strsub(txt[fd], 0, i)))
 			return (0);
 		tmp = txt[fd];
-		if (!(txt[fd] = ft_strsub(tmp, i + 1, ft_strlen(tmp))))
+		if (!(txt[fd] = ft_strsub(tmp, i + 1, ft_strlen(tmp) - i)))
 			return (0);
 		free(tmp);
 	}
