@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 13:46:25 by algautie          #+#    #+#             */
-/*   Updated: 2019/09/24 15:47:48 by algautie         ###   ########.fr       */
+/*   Updated: 2019/09/25 16:23:04 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ int				get_next_line(int fd, char **line)
 	char		*tmp;
 	int			ret;
 
-	if (line == NULL && txt[fd])
+	if ((ret = 0) && line == NULL && txt[fd])
 	{
-		free(txt);
+		free(txt[fd]);
 		return (-1);
 	}
 	if (BUFF_SIZE < 1 || fd > 65535 || !line || fd < 0 ||
