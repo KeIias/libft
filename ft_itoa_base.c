@@ -6,7 +6,7 @@
 /*   By: algautie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 11:14:59 by algautie          #+#    #+#             */
-/*   Updated: 2019/01/12 16:32:22 by algautie         ###   ########.fr       */
+/*   Updated: 2019/10/15 14:56:13 by algautie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ char	*ft_itoa_base(int value, int base)
 	unsigned int	tmp;
 	char			*str;
 
-	i = 0;
-	if (value == 0)
-		i = 1;
+	i = (value == 0 ? 1 : 0);
 	neg = (value < 0 && base == 10);
 	value *= (value < 0 ? -1 : 1);
 	tmp = value;
