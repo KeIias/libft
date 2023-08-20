@@ -1,4 +1,2 @@
-# libft
-Contains a bunch of libc functions as well as other useful tools that I made
-
-This work started from a school project and I keep using/updating it regularly
+# libft - personal library of C functions
+Contains reproductions of some of the standard C library functions as well as other custom-made ones that I deemed useful.
